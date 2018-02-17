@@ -1,4 +1,4 @@
-class quant_models(price_streaming):    
+class copula_models(price_streaming):    
     def price_return(self,dataset,field,i):
         returns = np.log(dataset[self.instruments[i]+"_"+field]/dataset[self.instruments[i]+"_"+field].shift(1))
         return returns                                
